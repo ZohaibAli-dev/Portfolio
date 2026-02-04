@@ -181,7 +181,7 @@ function initFormValidation() {
             return;
         }
 
-        emailjs.send("service_23xk5bg", "t_FhfC7p5kmsZAkoV", {
+        emailjs.send("service_23xk5bg", "template_60s6p7o", {
             from_name: nameInput.value,
             from_email: emailInput.value,
             message: messageInput.value
