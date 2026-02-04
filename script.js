@@ -172,34 +172,7 @@ function initFormValidation() {
     const messageInput = document.getElementById('message');
     const formSuccess = document.getElementById('formSuccess');
 
-    // Form submission with EmailJS
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        if (nameInput.value === "" || emailInput.value === "" || messageInput.value === "") {
-            alert("Please fill all fields");
-            return;
-        }
-
-        emailjs.send("service_23xk5bg", "template_60s6p7o", {
-            from_name: nameInput.value,
-            from_email: emailInput.value,
-            message: messageInput.value
-        })
-            .then(function () {
-                formSuccess.classList.add('show');
-                form.reset();
-
-                // Hide success message after 5 seconds
-                setTimeout(function () {
-                    formSuccess.classList.remove('show');
-                }, 5000);
-            })
-            .catch(function (error) {
-                alert("Message not sent ❌");
-                console.log(error);
-            });
-    });
+    // Form submission handled by Formspree (no custom JS).
 }
 
 // ========================================
