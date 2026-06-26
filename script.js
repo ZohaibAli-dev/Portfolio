@@ -180,31 +180,132 @@ function initFormValidation() {
 // ========================================
 
 function initScrollAnimations() {
-    // Intersection Observer for scroll animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver(function (entries) {
+    // ============================
+    // Section Header Animations
+    // ============================
+    const headerObserver = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('anim-visible');
+                headerObserver.unobserve(entry.target);
             }
         });
-    }, observerOptions);
+    }, { threshold: 0.2 });
 
-    // Observe elements for animation
-    const animatedElements = document.querySelectorAll(
-        '.skill-category, .project-card, .service-card, .about-text, .about-image, .contact-info, .contact-form-wrapper'
+    document.querySelectorAll('.section-header').forEach(header => {
+        headerObserver.observe(header);
+    });
+
+    // ============================
+    // Card & Element Animations
+    // ============================
+    const animObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('anim-visible');
+                animObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+
+    // Slide-up elements
+    const slideUpElements = document.querySelectorAll(
+        '.project-card, .feature-card, .tech-stack-item, .challenge-card, .project-overview-content, .contact-form-wrapper, .stat-item'
     );
+    slideUpElements.forEach((el, i) => {
+        el.classList.add('anim-slide-up');
+        el.style.transitionDelay = `${(i % 6) * 0.1}s`;
+        animObserver.observe(el);
+    });
 
-    animatedElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
+    // Slide-left elements
+    const slideLeftElements = document.querySelectorAll(
+        '.about-image, .contact-info'
+    );
+    slideLeftElements.forEach(el => {
+        el.classList.add('anim-slide-left');
+        animObserver.observe(el);
+    });
+
+    // Slide-right elements
+    const slideRightElements = document.querySelectorAll(
+        '.about-text, .project-hero-image'
+    );
+    slideRightElements.forEach(el => {
+        el.classList.add('anim-slide-right');
+        animObserver.observe(el);
+    });
+
+    // Scale-in elements
+    const scaleInElements = document.querySelectorAll(
+        '.skill-category, .service-card'
+    );
+    scaleInElements.forEach((el, i) => {
+        el.classList.add('anim-scale-in');
+        el.style.transitionDelay = `${(i % 6) * 0.1}s`;
+        animObserver.observe(el);
+    });
+
+    // Blur-in elements
+    const blurInElements = document.querySelectorAll(
+        '.architecture-step'
+    );
+    blurInElements.forEach((el, i) => {
+        el.classList.add('anim-blur-in');
+        el.style.transitionDelay = `${i * 0.15}s`;
+        animObserver.observe(el);
+    });
+
+    // ============================
+    // Counter Animation for Stats
+    // ============================
+    const counterObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                const text = el.textContent.trim();
+                const match = text.match(/^(\d+)/);
+                if (match) {
+                    const target = parseInt(match[1]);
+                    const suffix = text.replace(match[1], '');
+                    let current = 0;
+                    const step = Math.max(1, Math.floor(target / 40));
+                    const interval = setInterval(() => {
+                        current += step;
+                        if (current >= target) {
+                            current = target;
+                            clearInterval(interval);
+                        }
+                        el.textContent = current + suffix;
+                    }, 30);
+                }
+                counterObserver.unobserve(el);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.stat-number').forEach(el => {
+        counterObserver.observe(el);
+    });
+
+    // ============================
+    // Card Tilt Effect
+    // ============================
+    const tiltCards = document.querySelectorAll('.service-card, .skill-category');
+    tiltCards.forEach(card => {
+        card.addEventListener('mousemove', function (e) {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const rotateX = ((y - centerY) / centerY) * -4;
+            const rotateY = ((x - centerX) / centerX) * 4;
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+        });
+        card.addEventListener('mouseleave', function () {
+            card.style.transform = '';
+        });
     });
 }
 
