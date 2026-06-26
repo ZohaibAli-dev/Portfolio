@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="E-commerce Platform - A full-featured online shopping solution built by Zohaib Ali with React, Node.js, MongoDB, and Stripe integration.">
+    <title>E-commerce Platform | Zohaib Ali - Project Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="project-detail-page">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">Zohaib<span class="accent">.</span>Ali</a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                    <li><a href="index.html#projects" class="nav-link active">Projects</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-detail-hero">
+        <div class="container">
+            <div class="project-hero-content">
+                <div class="project-hero-text">
+                    <div class="project-hero-breadcrumb">
+                        <a href="index.html">Home</a>
+                        <span class="separator">/</span>
+                        <a href="index.html#projects">Projects</a>
+                        <span class="separator">/</span>
+                        <span class="current">E-commerce Platform</span>
+                    </div>
+                    <h1>E-commerce Platform</h1>
+                    <p class="project-hero-tagline">
+                        A comprehensive, full-featured online shopping solution with secure payment processing,
+                        real-time inventory management, and an intuitive admin dashboard — built from the ground up
+                        for scalability and performance.
+                    </p>
+                    <div class="project-hero-meta">
+                        <div class="project-meta-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>2025</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span>3 Months</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <i class="fas fa-user"></i>
+                            <span>Full Stack Developer</span>
+                        </div>
+                    </div>
+                    <div class="project-hero-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Stripe</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">JWT Auth</span>
+                    </div>
+                </div>
+                <div class="project-hero-image">
+                    <div class="project-hero-image-wrapper">
+                        <img src="project1.jpg" alt="E-commerce Platform Screenshot">
+                    </div>
+                    <div class="project-hero-image-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Project Overview</h2>
+                <p class="section-subtitle">The vision behind this project</p>
+            </div>
+            <div class="project-overview-content">
+                <h3>Building a Modern Shopping Experience</h3>
+                <p>
+                    This e-commerce platform was designed to provide businesses with a powerful, ready-to-deploy online
+                    store solution. The goal was to create a platform that could handle high traffic volumes while
+                    delivering a seamless, frictionless shopping experience for end users.
+                </p>
+                <p>
+                    The application features a fully responsive storefront with dynamic product filtering, a multi-step
+                    checkout process with Stripe integration, and a comprehensive admin panel for managing products,
+                    orders, customers, and analytics. Every aspect — from the shopping cart logic to the order
+                    fulfillment pipeline — was architected for reliability and scale.
+                </p>
+                <p>
+                    Special attention was given to performance optimization, including lazy-loaded images, code
+                    splitting, and server-side caching, ensuring sub-2-second page load times even under heavy traffic.
+                    The platform also implements robust security measures including JWT-based authentication, input
+                    sanitization, and rate limiting.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="project-features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Features</h2>
+                <p class="section-subtitle">What makes this platform stand out</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h4>Smart Shopping Cart</h4>
+                    <p>Persistent cart with real-time price calculations, quantity updates, discount code application,
+                        and automatic tax computation based on user location.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h4>Secure Payments</h4>
+                    <p>PCI-compliant payment processing through Stripe with support for credit/debit cards, digital
+                        wallets, and automated refund handling.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h4>User Authentication</h4>
+                    <p>JWT-based authentication system with secure registration, login, password reset, email
+                        verification, and role-based access control for admin users.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Admin Dashboard</h4>
+                    <p>Comprehensive analytics dashboard with sales metrics, revenue charts, customer insights, inventory
+                        alerts, and order management tools.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h4>Advanced Search & Filters</h4>
+                    <p>Full-text search with auto-suggestions, multi-faceted filtering by category, price range,
+                        ratings, and availability, with instant results.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-boxes-stacked"></i>
+                    </div>
+                    <h4>Inventory Management</h4>
+                    <p>Real-time stock tracking with low-inventory alerts, automated restocking notifications, batch
+                        product uploads via CSV, and variant management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="project-tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tech Stack</h2>
+                <p class="section-subtitle">Technologies powering this project</p>
+            </div>
+            <div class="tech-stack-grid">
+                <div class="tech-stack-item">
+                    <i class="fab fa-react"></i>
+                    <h4>React</h4>
+                    <p>Component-based UI with hooks, context API, and React Router for seamless SPA navigation</p>
+                </div>
+                <div class="tech-stack-item">
+                    <i class="fab fa-node-js"></i>
+                    <h4>Node.js</h4>
+                    <p>Server-side runtime with Express.js for building RESTful APIs and handling business logic</p>
+                </div>
+                <div class="tech-stack-item">
+                    <i class="fas fa-database"></i>
+                    <h4>MongoDB</h4>
+                    <p>NoSQL database with Mongoose ODM for flexible product schemas and efficient query operations</p>
+                </div>
+                <div class="tech-stack-item">
+                    <i class="fas fa-lock"></i>
+                    <h4>Stripe API</h4>
+                    <p>Secure payment processing with webhook integration for real-time payment status updates</p>
+                </div>
+                <div class="tech-stack-item">
+                    <i class="fas fa-key"></i>
+                    <h4>JWT & bcrypt</h4>
+                    <p>Token-based authentication with password hashing for secure user session management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture -->
+    <section class="project-architecture">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Architecture & Approach</h2>
+                <p class="section-subtitle">How this project was built</p>
+            </div>
+            <div class="architecture-content">
+                <div class="architecture-steps">
+                    <div class="architecture-step">
+                        <h4>1. Planning & Database Design</h4>
+                        <p>Started with wireframing the user flow and designing the MongoDB schema — including
+                            collections for users, products, orders, reviews, and cart items with proper indexing
+                            for optimal query performance.</p>
+                    </div>
+                    <div class="architecture-step">
+                        <h4>2. Backend API Development</h4>
+                        <p>Built a RESTful API with Express.js implementing CRUD operations, authentication
+                            middleware, error handling, input validation with Joi, and rate limiting. Structured
+                            using the MVC pattern for maintainability.</p>
+                    </div>
+                    <div class="architecture-step">
+                        <h4>3. Frontend Development</h4>
+                        <p>Developed the React frontend with reusable components, global state management using
+                            Context API, and React Router for client-side routing. Implemented responsive design
+                            with CSS Grid and Flexbox.</p>
+                    </div>
+                    <div class="architecture-step">
+                        <h4>4. Payment & Order Pipeline</h4>
+                        <p>Integrated Stripe Checkout with webhook listeners for payment confirmation, automated
+                            order status updates, email notifications, and inventory adjustment upon successful
+                            transactions.</p>
+                    </div>
+                    <div class="architecture-step">
+                        <h4>5. Testing & Optimization</h4>
+                        <p>Conducted thorough testing including unit tests, API endpoint testing with Postman,
+                            and performance optimization through image compression, code splitting, lazy loading,
+                            and server-side response caching.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges -->
+    <section class="project-challenges">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Challenges & Solutions</h2>
+                <p class="section-subtitle">Problems I solved along the way</p>
+            </div>
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>Cart Synchronization</h4>
+                    </div>
+                    <div class="challenge-body">
+                        <div class="challenge-label problem">Challenge</div>
+                        <p>Keeping the shopping cart in sync between the client, server, and database — especially
+                            when users switch devices or items go out of stock mid-session.</p>
+                        <div class="challenge-label solution">Solution</div>
+                        <p>Implemented a hybrid cart system that stores cart data locally for guests and syncs
+                            with the database for logged-in users, with real-time stock validation during checkout.</p>
+                    </div>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>Payment Security</h4>
+                    </div>
+                    <div class="challenge-body">
+                        <div class="challenge-label problem">Challenge</div>
+                        <p>Ensuring payment processing is fully secure while handling edge cases like network
+                            failures during checkout, duplicate transactions, and webhook delivery issues.</p>
+                        <div class="challenge-label solution">Solution</div>
+                        <p>Used Stripe's idempotency keys to prevent duplicate charges, implemented webhook
+                            signature verification, and added a payment reconciliation job to catch any missed events.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="project-nav">
+        <div class="container">
+            <div class="project-nav-content">
+                <a href="index.html#projects" class="project-nav-btn btn-primary">
+                    <i class="fas fa-arrow-left"></i> Back to All Projects
+                </a>
+                <a href="project-taskmanager.html" class="project-nav-btn">
+                    Next Project <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Zohaib Ali. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

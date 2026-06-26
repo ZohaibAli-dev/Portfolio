@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Task Management App - A collaborative task management application with real-time updates, built by Zohaib Ali using JavaScript, Firebase, and modern web technologies.">
+    <title>Task Management App | Zohaib Ali - Project Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="project-detail-page">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">Zohaib<span class="accent">.</span>Ali</a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                    <li><a href="index.html#projects" class="nav-link active">Projects</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-detail-hero">
+        <div class="container">
+            <div class="project-hero-content">
+                <div class="project-hero-text">
+                    <div class="project-hero-breadcrumb">
+                        <a href="index.html">Home</a>
+                        <span class="separator">/</span>
+                        <a href="index.html#projects">Projects</a>
+                        <span class="separator">/</span>
+                        <span class="current">Task Management App</span>
+                    </div>
+                    <h1>Task Management App</h1>
+                    <p class="project-hero-tagline">
+                        A collaborative task management application with real-time updates, team workspaces,
+                        drag-and-drop Kanban boards, and a powerful analytics dashboard — designed to boost
+                        team productivity and project visibility.
+                    </p>
+                    <div class="project-hero-meta">
+                        <div class="project-meta-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>2025</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span>2 Months</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <i class="fas fa-user"></i>
+                            <span>Full Stack Developer</span>
+                        </div>
+                    </div>
+                    <div class="project-hero-tags">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">Firestore</span>
+                        <span class="tech-tag">Drag & Drop API</span>
+                    </div>
+                </div>
+                <div class="project-hero-image">
+                    <div class="project-hero-image-wrapper">
+                        <img src="project2.jpg" alt="Task Management App Screenshot">
+                    </div>
+                    <div class="project-hero-image-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Project Overview</h2>
+                <p class="section-subtitle">The vision behind this project</p>
+            </div>
+            <div class="project-overview-content">
+                <h3>Streamlining Team Collaboration</h3>
+                <p>
+                    This task management application was built to solve a common pain point for small to mid-size
+                    teams: keeping everyone aligned on project progress without the overhead of complex enterprise
+                    tools. The focus was on simplicity, speed, and real-time collaboration.
+                </p>
+                <p>
+                    The app features a Kanban-style board with drag-and-drop functionality, allowing team members to
+                    visually track tasks through customizable workflow stages. Firebase Firestore powers the real-time
+                    data layer, meaning every change — whether it's a status update, new comment, or task
+                    reassignment — reflects instantly across all connected clients.
+                </p>
+                <p>
+                    Beyond task tracking, the app includes a built-in analytics dashboard that provides insights into
+                    team velocity, task completion rates, and workload distribution. This helps managers identify
+                    bottlenecks early and make data-driven decisions about resource allocation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="project-features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Features</h2>
+                <p class="section-subtitle">What makes this app powerful</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-columns"></i>
+                    </div>
+                    <h4>Kanban Board</h4>
+                    <p>Drag-and-drop interface with customizable columns (To Do, In Progress, Review, Done) for
+                        visual workflow management and intuitive task progression.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h4>Real-Time Sync</h4>
+                    <p>Powered by Firebase Firestore, every change syncs instantly across all team members' screens
+                        — no page refreshes needed, ensuring everyone sees the latest state.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Team Workspaces</h4>
+                    <p>Create separate workspaces for different projects or departments, invite team members via
+                        email, and manage access permissions at the workspace level.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h4>Analytics Dashboard</h4>
+                    <p>Visual reports showing task completion trends, team velocity charts, workload heatmaps, and
+                        overdue task alerts to keep projects on track.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h4>Smart Notifications</h4>
+                    <p>Configurable notifications for task assignments, due date reminders, comments, and status
+                        changes — delivered in-app and via email based on user preferences.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h4>Labels & Priorities</h4>
+                    <p>Color-coded labels, priority levels (Critical, High, Medium, Low), due dates, and assignees
+                        for organizing tasks and enabling quick filtering.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="project-tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tech Stack</h2>
+                <p class="section-subtitle">Technologies powering this project</p>
+            </div>
+            <div class="tech-stack-grid">
+                <div class="tech-stack-item">
+                    <i class="fab fa-js-square"></i>
+                    <h4>JavaScript (ES6+)</h4>
+                    <p>Modern vanilla JavaScript with modules, async/await, and the Drag & Drop API for a framework-free experience</p>
+                </div>
+                <div class="tech-stack-item">
+                    <i class="fas fa-fire"></i>
+                    <h4>Firebase</h4>
+                    <p>Firestore for real-time database, Firebase Auth for user management, and Cloud Functions for server-side logic</p>
+                </div>
+                <div class="tech-stack-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <h4>CSS3</h4>
+                    <p>Custom CSS with Grid, Flexbox, custom properties, and smooth animations for a polished UI</p>
+                </div>
+                <div class="tech-stack-item">
+                    <i class="fas fa-chart-pie"></i>
+                    <h4>Chart.js</h4>
+                    <p>Interactive, responsive charts for the analytics dashboard with customized themes and tooltips</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture -->
+    <section class="project-architecture">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Architecture & Approach</h2>
+                <p class="section-subtitle">How this project was built</p>
+            </div>
+            <div class="architecture-content">
+                <div class="architecture-steps">
+                    <div class="architecture-step">
+                        <h4>1. Data Modeling</h4>
+                        <p>Designed the Firestore data structure with collections for workspaces, boards, tasks,
+                            and users. Used subcollections for comments and activity logs to keep queries efficient
+                            and avoid document size limits.</p>
+                    </div>
+                    <div class="architecture-step">
+                        <h4>2. Real-Time Architecture</h4>
+                        <p>Leveraged Firestore's onSnapshot listeners to subscribe to task collections, enabling
+                            instant UI updates when any team member makes changes. Implemented optimistic updates
+                            for a snappy feel.</p>
+                    </div>
+                    <div class="architecture-step">
+                        <h4>3. Drag & Drop System</h4>
+                        <p>Built a custom drag-and-drop system using the HTML5 Drag & Drop API with visual
+                            feedback (ghost elements, drop zones), automatic column reordering, and position
+                            persistence in Firestore.</p>
+                    </div>
+                    <div class="architecture-step">
+                        <h4>4. Authentication & Permissions</h4>
+                        <p>Implemented Firebase Auth with Google sign-in and email/password options. Added Firestore
+                            security rules for workspace-level access control, ensuring users can only access
+                            boards they're invited to.</p>
+                    </div>
+                    <div class="architecture-step">
+                        <h4>5. Analytics Engine</h4>
+                        <p>Built a client-side analytics engine that processes task history data to generate
+                            velocity charts, burndown graphs, and workload distribution visualizations using
+                            Chart.js with custom color themes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges -->
+    <section class="project-challenges">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Challenges & Solutions</h2>
+                <p class="section-subtitle">Problems I solved along the way</p>
+            </div>
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>Real-Time Conflict Resolution</h4>
+                    </div>
+                    <div class="challenge-body">
+                        <div class="challenge-label problem">Challenge</div>
+                        <p>When two users drag the same task simultaneously, conflicting position updates could
+                            cause data inconsistency and flickering UI elements.</p>
+                        <div class="challenge-label solution">Solution</div>
+                        <p>Implemented Firestore transactions for position updates and added a timestamp-based
+                            conflict resolution strategy — the most recent update wins, with smooth UI reconciliation.</p>
+                    </div>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>Offline Support</h4>
+                    </div>
+                    <div class="challenge-body">
+                        <div class="challenge-label problem">Challenge</div>
+                        <p>Users needed to be able to view and interact with their tasks even when temporarily
+                            offline, with changes syncing once connectivity is restored.</p>
+                        <div class="challenge-label solution">Solution</div>
+                        <p>Enabled Firestore's offline persistence feature and implemented a queue-based approach
+                            for offline mutations, with visual indicators showing sync status to the user.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="project-nav">
+        <div class="container">
+            <div class="project-nav-content">
+                <a href="project-ecommerce.html" class="project-nav-btn">
+                    <i class="fas fa-arrow-left"></i> Previous Project
+                </a>
+                <a href="index.html#projects" class="project-nav-btn btn-primary">
+                    <i class="fas fa-th-large"></i> All Projects
+                </a>
+                <a href="project-fitness.html" class="project-nav-btn">
+                    Next Project <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Zohaib Ali. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
