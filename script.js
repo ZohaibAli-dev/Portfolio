@@ -37,7 +37,11 @@
         menuButton.setAttribute('aria-expanded', String(open));
         menuButton.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     }
-    menuButton.addEventListener('click', () => setMenu(menu.hidden));
+    menuButton.addEventListener('click', () => {
+        const opening = menu.hidden;
+        setMenu(opening);
+        if (opening) menu.querySelector('a')?.focus();
+    });
     menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
     document.addEventListener('keydown', event => {
         if (event.key === 'Escape' && !menu.hidden) { setMenu(false); menuButton.focus(); }
@@ -48,37 +52,69 @@
     matchMedia('(min-width: 1061px)').addEventListener('change', event => {
         if (event.matches) setMenu(false);
     });
+    // Restore a closed menu when returning through the browser's back/forward cache.
+    addEventListener('pageshow', () => { setMenu(false); updateScroll(); });
 
-    if ('IntersectionObserver' in window) {
-        const navigationObserver = new IntersectionObserver(entries => {
+    // Content stays visible without JavaScript or an observer. Motion begins only
+    // when an element enters the viewport, and never hides off-screen content.
+    const motionTargets = [...document.querySelectorAll([
+        '.reveal', '.reveal-line', '.page-hero-breadcrumb', '.page-hero h1',
+        '.page-hero .container > p', '.project-hero-breadcrumb',
+        '.project-hero-info h1', '.project-hero-tagline', '.project-hero-meta',
+        '.project-hero-tags', '.project-hero-image', '.section-header',
+        '.about-image', '.about-text', '.stat-item', '.skill-category',
+        '.feature-card', '.tech-stack-item', '.architecture-step',
+        '.challenge-card', '.contact-info', '.contact-form-wrapper',
+        '.project-nav-btn', '.journey-link', '.footer-top', '.foot'
+    ].join(','))];
+
+    function animateNumbers(element) {
+        element.querySelectorAll('.stat-number, .num').forEach(number => {
+            const original = number.textContent.trim();
+            const match = original.match(/^(\d+)([+%])$/);
+            if (!match || number.dataset.counted) return;
+            number.dataset.counted = 'true';
+            const total = Number(match[1]);
+            const start = performance.now();
+            function count(now) {
+                const fraction = Math.min(1, (now - start) / 1100);
+                number.textContent = Math.round(total * (1 - Math.pow(1 - fraction, 3))) + match[2];
+                if (fraction < 1) requestAnimationFrame(count);
+                else number.textContent = original;
+            }
+            requestAnimationFrame(count);
+        });
+    }
+
+    if (!reducedMotion && 'IntersectionObserver' in window) {
+        const groupSizes = new Map();
+        const delays = new WeakMap();
+        const revealObserver = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (!entry.isIntersecting) return;
-                const link = document.querySelector(`.links a[href="#${entry.target.id}"]`);
-                if (!link) return;
-                document.querySelectorAll('.links a').forEach(item => {
-                    item.removeAttribute('aria-current');
-                    item.classList.toggle('active', item === link);
+                const element = entry.target;
+                revealObserver.unobserve(element);
+                element.dataset.motion = 'revealed';
+                element.classList.add('in');
+                element.animate?.([
+                    { opacity: 0, translate: '0 24px' },
+                    { opacity: 1, translate: '0 0' }
+                ], {
+                    duration: 650,
+                    delay: delays.get(element) || 0,
+                    easing: 'cubic-bezier(.2,.75,.2,1)',
+                    fill: 'backwards'
                 });
-                link.setAttribute('aria-current', 'location');
+                animateNumbers(element);
             });
-        }, { rootMargin: '-20% 0px -55% 0px' });
-        document.querySelectorAll('.home-page section[id]').forEach(section => navigationObserver.observe(section));
-
-        if (!reducedMotion) {
-            const revealObserver = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (!entry.isIntersecting) return;
-                    entry.target.classList.add('in');
-                    revealObserver.unobserve(entry.target);
-                });
-            }, { threshold: 0.06 });
-            document.querySelectorAll('.reveal, .reveal-line').forEach(element => {
-                if (element.getBoundingClientRect().top > innerHeight) {
-                    element.classList.add('armed');
-                    revealObserver.observe(element);
-                }
-            });
-        }
+        }, { threshold: 0.08 });
+        motionTargets.forEach(element => {
+            const index = groupSizes.get(element.parentElement) || 0;
+            groupSizes.set(element.parentElement, index + 1);
+            delays.set(element, Math.min(index, 3) * 75);
+            element.dataset.motion = 'pending';
+            revealObserver.observe(element);
+        });
     }
 
     const typed = document.getElementById('typed');
@@ -109,7 +145,16 @@
     const filterButtons = document.querySelectorAll('.filter button');
     filterButtons.forEach(button => button.addEventListener('click', () => {
         filterButtons.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
-        cards.forEach(card => { card.hidden = button.dataset.f !== 'all' && card.dataset.cat !== button.dataset.f; });
+        let position = 0;
+        cards.forEach(card => {
+            card.hidden = button.dataset.f !== 'all' && card.dataset.cat !== button.dataset.f;
+            if (!card.hidden && !reducedMotion) {
+                card.animate?.([
+                    { opacity: 0, translate: '0 12px' },
+                    { opacity: 1, translate: '0 0' }
+                ], { duration: 320, delay: position++ * 50, easing: 'ease-out', fill: 'backwards' });
+            }
+        });
         updateScroll();
     }));
 

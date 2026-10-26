@@ -462,3 +462,53 @@ body{margin:0}
 @media(max-width:1060px){.features-grid,.skills-grid,.tech-stack-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.steps{grid-template-columns:repeat(3,minmax(0,1fr))}.steps::before{display:none}}
 @media(max-width:900px){.detail-page .about-content,.contact-content,.project-hero-content{grid-template-columns:1fr}.detail-page .about-image-wrapper{margin-inline:auto}.project-hero-image-wrapper{transform:none}.hero .role{min-height:2.5em}.steps{grid-template-columns:repeat(2,minmax(0,1fr))}.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.stat:nth-child(3){padding-left:24px;border-left:1px solid var(--line)}.stat:nth-child(n+3){border-top:0;margin-top:0}.challenges-grid{grid-template-columns:1fr}}
 @media(max-width:600px){.services-grid,.features-grid,.skills-grid,.tech-stack-grid,.steps{grid-template-columns:1fr}.service-card,.feature-card,.skill-category,.contact-form-wrapper{padding:24px}.stats{grid-template-columns:1fr}.stat,.stat+.stat,.stat:nth-child(3){border-left:0;padding:22px 0}.stat+.stat{border-top:1px solid var(--line)}.stat .num{font-size:54px}.about-stats{grid-template-columns:1fr;gap:28px}.footer-top{align-items:flex-start;flex-direction:column;gap:16px}.footer-top p{margin:0}.footer-pages{gap:16px}.contact-panel{border-radius:22px}.editor pre{font-size:11px}.hero-visual{padding-inline:12px}.name{font-size:clamp(48px,16vw,96px)}.hero{padding-top:46px}.eyebrow{font-size:10.5px}.project-nav-links{flex-direction:column}.project-nav-btn{justify-content:center}.project-hero-image img{aspect-ratio:4/3}.card-meta{font-size:10px}.role{font-size:23px}.hero .role{min-height:3.75em}.contact-panel .shape.s3{opacity:.35}}
+
+/* Page navigation stays consistent from the homepage to every case study. */
+.desktop-navigation{min-width:0}
+.links{gap:2px}
+.links a{padding-inline:10px}
+.links a[aria-current="page"]{color:var(--orange);background:color-mix(in srgb,var(--orange) 10%,transparent)}
+.links a[aria-current="page"]::before{content:"";display:inline-block;width:5px;height:5px;margin-right:7px;vertical-align:2px;background:var(--orange);border-radius:50%}
+.mobile-menu{max-height:calc(100dvh - 68px);overflow-y:auto}
+.mobile-menu a[aria-current="page"]{color:var(--orange)}
+.footer-pages a[aria-current="page"]{color:var(--orange)}
+.page-hero-breadcrumb a,.project-hero-breadcrumb a{transition:color .2s}
+.page-hero-breadcrumb a:hover,.project-hero-breadcrumb a:hover{color:var(--orange)}
+.page-hero-breadcrumb [aria-current="page"],.project-hero-breadcrumb [aria-current="page"]{color:var(--orange)}
+.page-hero .kicker{margin-top:28px}
+.projects-page .page-hero{padding-block:56px 64px}
+.projects-page .page-hero h1{max-width:20ch;font-size:clamp(42px,6vw,80px)}
+.projects-page #projects{padding-top:56px}
+.projects-page #projects .h2{font-size:clamp(28px,3.3vw,42px)}
+.projects-page .filter{margin-bottom:30px}
+.case-study-navigation{display:flex;gap:18px;align-items:stretch}
+.case-study-navigation .project-nav-btn{flex:1;min-width:0;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:12px;padding:26px;border-radius:18px;background:var(--surface);transition:border-color .3s,background .3s,transform .3s}
+.case-study-navigation .pager-direction{font-size:11px;color:var(--muted)}
+.case-study-navigation strong{font-family:var(--display);font-size:22px;font-weight:700;line-height:1.2}
+.case-study-navigation .pager-all{background:color-mix(in srgb,var(--orange) 10%,var(--surface));border-color:color-mix(in srgb,var(--orange) 40%,var(--line))}
+.case-study-navigation .project-nav-btn:hover{transform:translateY(-4px);border-color:var(--orange)}
+.services-cta{max-width:760px}
+.services-cta h3{font-family:var(--display);font-size:clamp(30px,4vw,48px);line-height:1.1;margin:0 0 20px}
+.services-cta p{color:var(--muted);margin:0 0 26px}
+.services-cta .project-nav-btn{background:var(--orange);color:var(--ink);font-weight:700;border-color:var(--orange)}
+.journey-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.journey-link{display:flex;justify-content:space-between;gap:24px;align-items:center;padding:32px;border:1px solid var(--line);border-radius:22px;background:var(--surface);text-decoration:none;transition:transform .3s,border-color .3s}
+.journey-link h2{font-family:var(--display);font-size:clamp(24px,3vw,34px);line-height:1.15;letter-spacing:-.02em;margin:0 0 12px}
+.journey-link p{color:var(--muted);font-size:15px;margin:0}
+.journey-link>span{font-size:34px;color:var(--orange);transition:transform .3s}
+.journey-link:hover{transform:translateY(-5px);border-color:var(--orange)}
+.journey-link:hover>span{transform:translate(3px,-3px)}
+.feature-card,.skill-category,.tech-stack-item,.challenge-card,.contact-form-wrapper{transition:transform .35s var(--ease),border-color .35s,box-shadow .35s}
+.feature-card:hover,.skill-category:hover,.tech-stack-item:hover,.challenge-card:hover{transform:translateY(-5px);border-color:color-mix(in srgb,var(--orange) 65%,var(--line));box-shadow:0 18px 36px -30px var(--orange)}
+.feature-card-icon,.skill-category-icon{transition:transform .4s var(--ease)}
+.feature-card:hover .feature-card-icon,.skill-category:hover .skill-category-icon{transform:translateY(-3px) rotate(-6deg)}
+.contact-form-wrapper:focus-within{border-color:var(--orange)}
+.project-details:hover{color:var(--m)}
+.project-details span{transition:transform .3s}
+.project-details:hover span{transform:translate(3px,-3px)}
+.social-link{transition:color .25s,border-color .25s,transform .25s}
+.social-link:hover{transform:translateY(-3px)}
+.btn:active,.icon-btn:active{transform:scale(.97)}
+@media(max-width:1060px){.desktop-navigation{display:none}}
+@media(max-width:700px){.case-study-navigation,.journey-grid{display:grid;grid-template-columns:1fr}.case-study-navigation .project-nav-btn,.journey-link{padding:24px}.case-study-navigation .pager-all{order:3}.home-page #projects .sec-head{align-items:flex-start}.mobile-menu a{font-size:25px;padding-block:10px}}
+@media(prefers-reduced-motion:reduce){.feature-card:hover,.skill-category:hover,.tech-stack-item:hover,.challenge-card:hover,.journey-link:hover,.case-study-navigation .project-nav-btn:hover,.social-link:hover{transform:none}.feature-card:hover .feature-card-icon,.skill-category:hover .skill-category-icon,.journey-link:hover>span,.project-details:hover span{transform:none}}
