@@ -1,339 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Real Estate Portal - A property listing platform with advanced search, virtual tours, and agent management, built by Zohaib Ali using PHP, MySQL, and JavaScript.">
-    <title>Real Estate Portal | Zohaib Ali - Project Details</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-</head>
-
-<body class="project-detail-page">
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <a href="index.html">Zohaib<span class="accent">.</span>Ali</a>
-                </div>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="index.html#about" class="nav-link">About</a></li>
-                    <li><a href="index.html#skills" class="nav-link">Skills</a></li>
-                    <li><a href="index.html#projects" class="nav-link active">Projects</a></li>
-                    <li><a href="index.html#services" class="nav-link">Services</a></li>
-                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <div class="nav-actions">
-                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Project Hero -->
-    <section class="project-detail-hero">
-        <div class="container">
-            <div class="project-hero-content">
-                <div class="project-hero-text">
-                    <div class="project-hero-breadcrumb">
-                        <a href="index.html">Home</a>
-                        <span class="separator">/</span>
-                        <a href="index.html#projects">Projects</a>
-                        <span class="separator">/</span>
-                        <span class="current">Real Estate Portal</span>
-                    </div>
-                    <h1>Real Estate Portal</h1>
-                    <p class="project-hero-tagline">
+<html data-theme="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/><meta content="Real Estate Portal - A property listing platform with advanced search, virtual tours, and agent management, built by Zohaib Ali using PHP, MySQL, and JavaScript." name="description"/><meta content="#0C0B0A" name="theme-color"/><title>Real Estate Portal | Zohaib Ali - Project Details</title><script>try{document.documentElement.dataset.theme=localStorage.getItem('portfolio-theme')||'dark'}catch(e){}</script><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&amp;family=Instrument+Sans:wght@400..700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/><link href="style.css?v=20261026c" rel="stylesheet"/><link href="favicon.svg" rel="icon" type="image/svg+xml"/></head><body><a class="skip-link" href="#top">Skip to content</a><div aria-hidden="true" class="aura"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div><div class="cursor" hidden="" id="cursor"></div><header aria-label="Site header" class="nav" id="nav">
+<div class="wrap nav-in">
+<a aria-label="Zohaib Ali, back to top" class="logo" href="index.html#top"><span class="mono-mark">ZA</span><span>Zohaib Ali</span></a>
+<ul aria-label="Main navigation" class="links"><li><a href="index.html#about">About</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#services">Services</a></li><li><a href="index.html#contact">Contact</a></li></ul>
+<div class="nav-actions">
+<button aria-label="Switch theme" class="icon-btn" id="themeToggle" type="button">
+<svg class="sun" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+<svg class="moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"></path></svg>
+</button>
+<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Open menu" class="icon-btn menu-btn" id="menuBtn" type="button">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"></path></svg>
+</button>
+<a class="btn btn-primary btn-sm hire magnetic" href="contact.html">Hire me</a>
+</div>
+</div>
+<nav aria-label="Mobile" class="mobile-menu" hidden="" id="mobileMenu">
+<div class="wrap">
+<ul><li><a href="index.html#about">About</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#services">Services</a></li><li><a href="index.html#contact">Contact</a></li></ul>
+</div>
+</nav>
+<div class="progress" id="progress"></div>
+</header><main class="detail-page" id="top"><section class="project-detail-hero">
+<div class="container">
+<div class="project-hero-content">
+<div class="project-hero-text">
+<div class="project-hero-breadcrumb">
+<a href="index.html">Home</a>
+<span class="separator">/</span>
+<a href="index.html#projects">Projects</a>
+<span class="separator">/</span>
+<span class="current">Real Estate Portal</span>
+</div>
+<h1>Real Estate Portal</h1>
+<p class="project-hero-tagline">
                         A comprehensive property listing platform with advanced search filters, interactive map
                         views, virtual property tours, and a complete agent management system — connecting
                         buyers with their dream properties.
                     </p>
-                    <div class="project-hero-meta">
-                        <div class="project-meta-item">
-                            <i class="fas fa-calendar-alt"></i>
-                            <span>2024</span>
-                        </div>
-                        <div class="project-meta-item">
-                            <i class="fas fa-clock"></i>
-                            <span>3.5 Months</span>
-                        </div>
-                        <div class="project-meta-item">
-                            <i class="fas fa-user"></i>
-                            <span>Full Stack Developer</span>
-                        </div>
-                    </div>
-                    <div class="project-hero-tags">
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Google Maps API</span>
-                        <span class="tech-tag">AJAX</span>
-                    </div>
-                </div>
-                <div class="project-hero-image">
-                    <div class="project-hero-image-wrapper">
-                        <img src="project4.jpg" alt="Real Estate Portal Screenshot">
-                    </div>
-                    <div class="project-hero-image-glow"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Overview -->
-    <section class="project-overview">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Project Overview</h2>
-                <p class="section-subtitle">The vision behind this project</p>
-            </div>
-            <div class="project-overview-content">
-                <h3>Connecting People With Properties</h3>
-                <p>
+<div class="project-hero-meta">
+<div class="project-meta-item">
+<i class="fas fa-calendar-alt"></i>
+<span>2024</span>
+</div>
+<div class="project-meta-item">
+<i class="fas fa-clock"></i>
+<span>3.5 Months</span>
+</div>
+<div class="project-meta-item">
+<i class="fas fa-user"></i>
+<span>Full Stack Developer</span>
+</div>
+</div>
+<div class="project-hero-tags">
+<span class="tech-tag">PHP</span>
+<span class="tech-tag">MySQL</span>
+<span class="tech-tag">JavaScript</span>
+<span class="tech-tag">Google Maps API</span>
+<span class="tech-tag">AJAX</span>
+</div>
+</div>
+<div class="project-hero-image">
+<div class="project-hero-image-wrapper">
+<img alt="Real Estate Portal Screenshot" loading="lazy" src="project4.jpg"/>
+</div>
+<div class="project-hero-image-glow"></div>
+</div>
+</div>
+</div>
+</section><section class="project-overview">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Project Overview</h2>
+<p class="section-subtitle">The vision behind this project</p>
+</div>
+<div class="project-overview-content">
+<h3>Connecting People With Properties</h3>
+<p>
                     The Real Estate Portal was built to digitize and streamline the property search and listing
                     process. The platform serves three user types: property seekers who can browse and filter
                     listings, property owners who can list and manage their properties, and real estate agents
                     who use the platform as a complete business management tool.
                 </p>
-                <p>
+<p>
                     At its core, the portal features a powerful search engine with multi-faceted filtering —
                     users can narrow results by location, price range, property type, number of bedrooms,
                     amenities, and more. An interactive map view lets users explore properties geographically,
                     while detailed listing pages include photo galleries, floor plans, neighborhood info, and
                     virtual walkthrough tours.
                 </p>
-                <p>
+<p>
                     The agent management system is a standout feature, providing agents with their own dashboard
                     to manage listings, track inquiries, schedule viewings, and monitor their portfolio
                     performance with analytics and lead management tools.
                 </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Key Features -->
-    <section class="project-features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Key Features</h2>
-                <p class="section-subtitle">What makes this portal exceptional</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="fas fa-search-location"></i>
-                    </div>
-                    <h4>Advanced Search</h4>
-                    <p>Multi-criteria search with filters for location, price, property type, bedrooms, bathrooms,
+</div>
+</div>
+</section><section class="project-features">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Key Features</h2>
+<p class="section-subtitle">What makes this portal exceptional</p>
+</div>
+<div class="features-grid">
+<div class="feature-card">
+<div class="feature-card-icon">
+<i class="fas fa-search-location"></i>
+</div>
+<h4>Advanced Search</h4>
+<p>Multi-criteria search with filters for location, price, property type, bedrooms, bathrooms,
                         lot size, year built, and amenities — with AJAX-powered instant results.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
-                    <h4>Interactive Map View</h4>
-                    <p>Google Maps integration showing property locations with custom markers, cluster grouping,
+</div>
+<div class="feature-card">
+<div class="feature-card-icon">
+<i class="fas fa-map-marked-alt"></i>
+</div>
+<h4>Interactive Map View</h4>
+<p>Google Maps integration showing property locations with custom markers, cluster grouping,
                         and info windows with property previews — browse properties by neighborhood visually.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="fas fa-vr-cardboard"></i>
-                    </div>
-                    <h4>Virtual Tours</h4>
-                    <p>360° virtual walkthrough tours allowing potential buyers to explore properties remotely
+</div>
+<div class="feature-card">
+<div class="feature-card-icon">
+<i class="fas fa-vr-cardboard"></i>
+</div>
+<h4>Virtual Tours</h4>
+<p>360° virtual walkthrough tours allowing potential buyers to explore properties remotely
                         with interactive hotspots for room-to-room navigation.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h4>Agent Dashboard</h4>
-                    <p>Complete agent portal with listing management, inquiry tracking, viewing schedules,
+</div>
+<div class="feature-card">
+<div class="feature-card-icon">
+<i class="fas fa-user-tie"></i>
+</div>
+<h4>Agent Dashboard</h4>
+<p>Complete agent portal with listing management, inquiry tracking, viewing schedules,
                         commission calculator, and performance analytics.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h4>Saved Searches & Favorites</h4>
-                    <p>Users can save properties to favorites, create saved searches with custom criteria, and
+</div>
+<div class="feature-card">
+<div class="feature-card-icon">
+<i class="fas fa-heart"></i>
+</div>
+<h4>Saved Searches &amp; Favorites</h4>
+<p>Users can save properties to favorites, create saved searches with custom criteria, and
                         receive email alerts when new matching listings are added.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="fas fa-calculator"></i>
-                    </div>
-                    <h4>Mortgage Calculator</h4>
-                    <p>Built-in mortgage calculator with adjustable parameters for down payment, interest rate,
+</div>
+<div class="feature-card">
+<div class="feature-card-icon">
+<i class="fas fa-calculator"></i>
+</div>
+<h4>Mortgage Calculator</h4>
+<p>Built-in mortgage calculator with adjustable parameters for down payment, interest rate,
                         and loan term — showing monthly payment breakdowns and amortization schedules.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tech Stack -->
-    <section class="project-tech-stack">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Tech Stack</h2>
-                <p class="section-subtitle">Technologies powering this project</p>
-            </div>
-            <div class="tech-stack-grid">
-                <div class="tech-stack-item">
-                    <i class="fab fa-php"></i>
-                    <h4>PHP</h4>
-                    <p>Server-side logic with MVC architecture, PDO for database operations, and session management</p>
-                </div>
-                <div class="tech-stack-item">
-                    <i class="fas fa-database"></i>
-                    <h4>MySQL</h4>
-                    <p>Relational database with optimized queries, spatial indexing for location-based searches, and full-text search</p>
-                </div>
-                <div class="tech-stack-item">
-                    <i class="fab fa-js-square"></i>
-                    <h4>JavaScript</h4>
-                    <p>Dynamic frontend with AJAX requests, Google Maps API integration, and interactive UI components</p>
-                </div>
-                <div class="tech-stack-item">
-                    <i class="fas fa-map"></i>
-                    <h4>Google Maps API</h4>
-                    <p>Interactive maps with custom markers, geocoding, and Places API for address autocomplete</p>
-                </div>
-                <div class="tech-stack-item">
-                    <i class="fas fa-images"></i>
-                    <h4>Image Processing</h4>
-                    <p>Server-side image optimization with thumbnail generation, watermarking, and gallery management</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Architecture -->
-    <section class="project-architecture">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Architecture & Approach</h2>
-                <p class="section-subtitle">How this project was built</p>
-            </div>
-            <div class="architecture-content">
-                <div class="architecture-steps">
-                    <div class="architecture-step">
-                        <h4>1. Requirements & Database Design</h4>
-                        <p>Analyzed real estate workflows and designed a comprehensive MySQL schema covering
+</div>
+</div>
+</div>
+</section><section class="project-tech-stack">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Tech Stack</h2>
+<p class="section-subtitle">Technologies powering this project</p>
+</div>
+<div class="tech-stack-grid">
+<div class="tech-stack-item">
+<i class="fab fa-php"></i>
+<h4>PHP</h4>
+<p>Server-side logic with MVC architecture, PDO for database operations, and session management</p>
+</div>
+<div class="tech-stack-item">
+<i class="fas fa-database"></i>
+<h4>MySQL</h4>
+<p>Relational database with optimized queries, spatial indexing for location-based searches, and full-text search</p>
+</div>
+<div class="tech-stack-item">
+<i class="fab fa-js-square"></i>
+<h4>JavaScript</h4>
+<p>Dynamic frontend with AJAX requests, Google Maps API integration, and interactive UI components</p>
+</div>
+<div class="tech-stack-item">
+<i class="fas fa-map"></i>
+<h4>Google Maps API</h4>
+<p>Interactive maps with custom markers, geocoding, and Places API for address autocomplete</p>
+</div>
+<div class="tech-stack-item">
+<i class="fas fa-images"></i>
+<h4>Image Processing</h4>
+<p>Server-side image optimization with thumbnail generation, watermarking, and gallery management</p>
+</div>
+</div>
+</div>
+</section><section class="project-architecture">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Architecture &amp; Approach</h2>
+<p class="section-subtitle">How this project was built</p>
+</div>
+<div class="architecture-content">
+<div class="architecture-steps">
+<div class="architecture-step">
+<h4>1. Requirements &amp; Database Design</h4>
+<p>Analyzed real estate workflows and designed a comprehensive MySQL schema covering
                             properties (with 30+ fields), agents, users, inquiries, viewings, and favorites.
                             Implemented spatial indexing for efficient location-based queries.</p>
-                    </div>
-                    <div class="architecture-step">
-                        <h4>2. MVC Architecture</h4>
-                        <p>Structured the PHP backend using the MVC pattern with a custom routing system,
+</div>
+<div class="architecture-step">
+<h4>2. MVC Architecture</h4>
+<p>Structured the PHP backend using the MVC pattern with a custom routing system,
                             middleware for authentication, and service classes for business logic separation.
                             Used PDO with prepared statements for secure database access.</p>
-                    </div>
-                    <div class="architecture-step">
-                        <h4>3. Search Engine</h4>
-                        <p>Built a flexible search system supporting multiple filter combinations with dynamic
+</div>
+<div class="architecture-step">
+<h4>3. Search Engine</h4>
+<p>Built a flexible search system supporting multiple filter combinations with dynamic
                             SQL query building, full-text search for property descriptions, and MySQL spatial
                             functions for radius-based location searches.</p>
-                    </div>
-                    <div class="architecture-step">
-                        <h4>4. Frontend & Map Integration</h4>
-                        <p>Developed the responsive frontend with vanilla JavaScript, implementing AJAX-powered
+</div>
+<div class="architecture-step">
+<h4>4. Frontend &amp; Map Integration</h4>
+<p>Developed the responsive frontend with vanilla JavaScript, implementing AJAX-powered
                             search results, Google Maps with marker clustering, infinite scroll pagination,
                             and a smooth photo gallery with lightbox viewer.</p>
-                    </div>
-                    <div class="architecture-step">
-                        <h4>5. Admin & Agent Panels</h4>
-                        <p>Created role-based dashboards — admin panel for platform management and moderation,
+</div>
+<div class="architecture-step">
+<h4>5. Admin &amp; Agent Panels</h4>
+<p>Created role-based dashboards — admin panel for platform management and moderation,
                             and agent panel for listing management, lead tracking, and performance reporting
                             with exportable CSV reports.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Challenges -->
-    <section class="project-challenges">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Challenges & Solutions</h2>
-                <p class="section-subtitle">Problems I solved along the way</p>
-            </div>
-            <div class="challenges-grid">
-                <div class="challenge-card">
-                    <div class="challenge-header">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        <h4>Complex Search Performance</h4>
-                    </div>
-                    <div class="challenge-body">
-                        <div class="challenge-label problem">Challenge</div>
-                        <p>With thousands of listings and 10+ filter parameters, search queries were becoming
+</div>
+</div>
+</div>
+</div>
+</section><section class="project-challenges">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Challenges &amp; Solutions</h2>
+<p class="section-subtitle">Problems I solved along the way</p>
+</div>
+<div class="challenges-grid">
+<div class="challenge-card">
+<div class="challenge-header">
+<i class="fas fa-exclamation-triangle"></i>
+<h4>Complex Search Performance</h4>
+</div>
+<div class="challenge-body">
+<div class="challenge-label problem">Challenge</div>
+<p>With thousands of listings and 10+ filter parameters, search queries were becoming
                             slow, especially when combining location-based radius search with multiple criteria.</p>
-                        <div class="challenge-label solution">Solution</div>
-                        <p>Optimized with MySQL spatial indexing for location queries, compound indexes for
+<div class="challenge-label solution">Solution</div>
+<p>Optimized with MySQL spatial indexing for location queries, compound indexes for
                             common filter combinations, query caching for repeated searches, and pagination
                             to limit result set sizes.</p>
-                    </div>
-                </div>
-                <div class="challenge-card">
-                    <div class="challenge-header">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        <h4>Image Management at Scale</h4>
-                    </div>
-                    <div class="challenge-body">
-                        <div class="challenge-label problem">Challenge</div>
-                        <p>Each property listing has 10-30 high-resolution photos. Handling uploads, processing,
+</div>
+</div>
+<div class="challenge-card">
+<div class="challenge-header">
+<i class="fas fa-exclamation-triangle"></i>
+<h4>Image Management at Scale</h4>
+</div>
+<div class="challenge-body">
+<div class="challenge-label problem">Challenge</div>
+<p>Each property listing has 10-30 high-resolution photos. Handling uploads, processing,
                             storage, and serving optimized versions was resource-intensive and slow.</p>
-                        <div class="challenge-label solution">Solution</div>
-                        <p>Implemented a background processing pipeline that generates multiple sizes (thumbnail,
+<div class="challenge-label solution">Solution</div>
+<p>Implemented a background processing pipeline that generates multiple sizes (thumbnail,
                             medium, full) with WebP conversion, lazy loading on the frontend, and CDN integration
                             for fast global delivery.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Navigation -->
-    <section class="project-nav">
-        <div class="container">
-            <div class="project-nav-content">
-                <a href="project-fitness.html" class="project-nav-btn">
-                    <i class="fas fa-arrow-left"></i> Previous Project
+</div>
+</div>
+</div>
+</div>
+</section><section class="project-nav">
+<div class="container">
+<div class="project-nav-content">
+<a class="project-nav-btn" href="project-fitness.html">
+<i class="fas fa-arrow-left"></i> Previous Project
                 </a>
-                <a href="index.html#projects" class="project-nav-btn btn-primary">
-                    <i class="fas fa-th-large"></i> All Projects
+<a class="project-nav-btn btn-primary" href="index.html#projects">
+<i class="fas fa-th-large"></i> All Projects
                 </a>
-                <a href="project-weather.html" class="project-nav-btn">
+<a class="project-nav-btn" href="project-weather.html">
                     Next Project <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2026 Zohaib Ali. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-
-</html>
+</a>
+</div>
+</div>
+</section></main><footer><div class="wrap"><div class="footer-top"><a class="logo" href="index.html#top"><span class="mono-mark">ZA</span>Zohaib Ali</a><p>Building the future, one line of code at a time.</p><div class="footer-socials"><a href="https://github.com/ZohaibAli-dev/" rel="noopener noreferrer" target="_blank">GitHub ↗</a><a href="https://www.linkedin.com/in/zohaibali-dev/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a><a href="mailto:iamzohaibali@gmail.com">Email ↗</a></div></div><div class="foot"><span>© 2026 Zohaib Ali. All rights reserved.</span><nav aria-label="More about Zohaib" class="footer-pages"><a href="about.html">About</a><a href="skills.html">Skills</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav><a href="#top">Back to top ↑</a></div></div></footer><script defer="" src="script.js?v=20261026"></script></body></html>

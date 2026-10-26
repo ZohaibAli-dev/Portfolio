@@ -1,334 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="E-commerce Platform - A full-featured online shopping solution built by Zohaib Ali with React, Node.js, MongoDB, and Stripe integration.">
-    <title>E-commerce Platform | Zohaib Ali - Project Details</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-</head>
-
-<body class="project-detail-page">
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <a href="index.html">Zohaib<span class="accent">.</span>Ali</a>
-                </div>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="index.html#about" class="nav-link">About</a></li>
-                    <li><a href="index.html#skills" class="nav-link">Skills</a></li>
-                    <li><a href="index.html#projects" class="nav-link active">Projects</a></li>
-                    <li><a href="index.html#services" class="nav-link">Services</a></li>
-                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <div class="nav-actions">
-                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Project Hero -->
-    <section class="project-detail-hero">
-        <div class="container">
-            <div class="project-hero-content">
-                <div class="project-hero-text">
-                    <div class="project-hero-breadcrumb">
-                        <a href="index.html">Home</a>
-                        <span class="separator">/</span>
-                        <a href="index.html#projects">Projects</a>
-                        <span class="separator">/</span>
-                        <span class="current">E-commerce Platform</span>
-                    </div>
-                    <h1>E-commerce Platform</h1>
-                    <p class="project-hero-tagline">
+<html data-theme="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/><meta content="E-commerce Platform - A full-featured online shopping solution built by Zohaib Ali with React, Node.js, MongoDB, and Stripe integration." name="description"/><meta content="#0C0B0A" name="theme-color"/><title>E-commerce Platform | Zohaib Ali - Project Details</title><script>try{document.documentElement.dataset.theme=localStorage.getItem('portfolio-theme')||'dark'}catch(e){}</script><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&amp;family=Instrument+Sans:wght@400..700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/><link href="style.css?v=20261026c" rel="stylesheet"/><link href="favicon.svg" rel="icon" type="image/svg+xml"/></head><body><a class="skip-link" href="#top">Skip to content</a><div aria-hidden="true" class="aura"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div><div class="cursor" hidden="" id="cursor"></div><header aria-label="Site header" class="nav" id="nav">
+<div class="wrap nav-in">
+<a aria-label="Zohaib Ali, back to top" class="logo" href="index.html#top"><span class="mono-mark">ZA</span><span>Zohaib Ali</span></a>
+<ul aria-label="Main navigation" class="links"><li><a href="index.html#about">About</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#services">Services</a></li><li><a href="index.html#contact">Contact</a></li></ul>
+<div class="nav-actions">
+<button aria-label="Switch theme" class="icon-btn" id="themeToggle" type="button">
+<svg class="sun" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+<svg class="moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"></path></svg>
+</button>
+<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Open menu" class="icon-btn menu-btn" id="menuBtn" type="button">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"></path></svg>
+</button>
+<a class="btn btn-primary btn-sm hire magnetic" href="contact.html">Hire me</a>
+</div>
+</div>
+<nav aria-label="Mobile" class="mobile-menu" hidden="" id="mobileMenu">
+<div class="wrap">
+<ul><li><a href="index.html#about">About</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#services">Services</a></li><li><a href="index.html#contact">Contact</a></li></ul>
+</div>
+</nav>
+<div class="progress" id="progress"></div>
+</header><main class="detail-page" id="top"><section class="project-detail-hero">
+<div class="container">
+<div class="project-hero-content">
+<div class="project-hero-text">
+<div class="project-hero-breadcrumb">
+<a href="index.html">Home</a>
+<span class="separator">/</span>
+<a href="index.html#projects">Projects</a>
+<span class="separator">/</span>
+<span class="current">E-commerce Platform</span>
+</div>
+<h1>E-commerce Platform</h1>
+<p class="project-hero-tagline">
                         A comprehensive, full-featured online shopping solution with secure payment processing,
                         real-time inventory management, and an intuitive admin dashboard — built from the ground up
                         for scalability and performance.
                     </p>
-                    <div class="project-hero-meta">
-                        <div class="project-meta-item">
-                            <i class="fas fa-calendar-alt"></i>
-                            <span>2025</span>
-                        </div>
-                        <div class="project-meta-item">
-                            <i class="fas fa-clock"></i>
-                            <span>3 Months</span>
-                        </div>
-                        <div class="project-meta-item">
-                            <i class="fas fa-user"></i>
-                            <span>Full Stack Developer</span>
-                        </div>
-                    </div>
-                    <div class="project-hero-tags">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">Stripe</span>
-                        <span class="tech-tag">Express.js</span>
-                        <span class="tech-tag">JWT Auth</span>
-                    </div>
-                </div>
-                <div class="project-hero-image">
-                    <div class="project-hero-image-wrapper">
-                        <img src="project1.jpg" alt="E-commerce Platform Screenshot">
-                    </div>
-                    <div class="project-hero-image-glow"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Overview -->
-    <section class="project-overview">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Project Overview</h2>
-                <p class="section-subtitle">The vision behind this project</p>
-            </div>
-            <div class="project-overview-content">
-                <h3>Building a Modern Shopping Experience</h3>
-                <p>
+<div class="project-hero-meta">
+<div class="project-meta-item">
+<i class="fas fa-calendar-alt"></i>
+<span>2025</span>
+</div>
+<div class="project-meta-item">
+<i class="fas fa-clock"></i>
+<span>3 Months</span>
+</div>
+<div class="project-meta-item">
+<i class="fas fa-user"></i>
+<span>Full Stack Developer</span>
+</div>
+</div>
+<div class="project-hero-tags">
+<span class="tech-tag">React</span>
+<span class="tech-tag">Node.js</span>
+<span class="tech-tag">MongoDB</span>
+<span class="tech-tag">Stripe</span>
+<span class="tech-tag">Express.js</span>
+<span class="tech-tag">JWT Auth</span>
+</div>
+</div>
+<div class="project-hero-image">
+<div class="project-hero-image-wrapper">
+<img alt="E-commerce Platform Screenshot" loading="lazy" src="project1.jpg"/>
+</div>
+<div class="project-hero-image-glow"></div>
+</div>
+</div>
+</div>
+</section><section class="project-overview">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Project Overview</h2>
+<p class="section-subtitle">The vision behind this project</p>
+</div>
+<div class="project-overview-content">
+<h3>Building a Modern Shopping Experience</h3>
+<p>
                     This e-commerce platform was designed to provide businesses with a powerful, ready-to-deploy online
                     store solution. The goal was to create a platform that could handle high traffic volumes while
                     delivering a seamless, frictionless shopping experience for end users.
                 </p>
-                <p>
+<p>
                     The application features a fully responsive storefront with dynamic product filtering, a multi-step
                     checkout process with Stripe integration, and a comprehensive admin panel for managing products,
                     orders, customers, and analytics. Every aspect — from the shopping cart logic to the order
                     fulfillment pipeline — was architected for reliability and scale.
                 </p>
-                <p>
+<p>
                     Special attention was given to performance optimization, including lazy-loaded images, code
                     splitting, and server-side caching, ensuring sub-2-second page load times even under heavy traffic.
                     The platform also implements robust security measures including JWT-based authentication, input
                     sanitization, and rate limiting.
                 </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Key Features -->
-    <section class="project-features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Key Features</h2>
-                <p class="section-subtitle">What makes this platform stand out</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <h4>Smart Shopping Cart</h4>
-                    <p>Persistent cart with real-time price calculations, quantity updates, discount code application,
+</div>
+</div>
+</section><section class="project-features">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Key Features</h2>
+<p class="section-subtitle">What makes this platform stand out</p>
+</div>
+<div class="features-grid">
+<div class="feature-card">
+<div class="feature-card-icon">
+<i class="fas fa-shopping-cart"></i>
+</div>
+<h4>Smart Shopping Cart</h4>
+<p>Persistent cart with real-time price calculations, quantity updates, discount code application,
                         and automatic tax computation based on user location.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="fas fa-credit-card"></i>
-                    </div>
-                    <h4>Secure Payments</h4>
-                    <p>PCI-compliant payment processing through Stripe with support for credit/debit cards, digital
+</div>
+<div class="feature-card">
+<div class="feature-card-icon">
+<i class="fas fa-credit-card"></i>
+</div>
+<h4>Secure Payments</h4>
+<p>PCI-compliant payment processing through Stripe with support for credit/debit cards, digital
                         wallets, and automated refund handling.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="fas fa-user-shield"></i>
-                    </div>
-                    <h4>User Authentication</h4>
-                    <p>JWT-based authentication system with secure registration, login, password reset, email
+</div>
+<div class="feature-card">
+<div class="feature-card-icon">
+<i class="fas fa-user-shield"></i>
+</div>
+<h4>User Authentication</h4>
+<p>JWT-based authentication system with secure registration, login, password reset, email
                         verification, and role-based access control for admin users.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h4>Admin Dashboard</h4>
-                    <p>Comprehensive analytics dashboard with sales metrics, revenue charts, customer insights, inventory
+</div>
+<div class="feature-card">
+<div class="feature-card-icon">
+<i class="fas fa-chart-line"></i>
+</div>
+<h4>Admin Dashboard</h4>
+<p>Comprehensive analytics dashboard with sales metrics, revenue charts, customer insights, inventory
                         alerts, and order management tools.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h4>Advanced Search & Filters</h4>
-                    <p>Full-text search with auto-suggestions, multi-faceted filtering by category, price range,
+</div>
+<div class="feature-card">
+<div class="feature-card-icon">
+<i class="fas fa-search"></i>
+</div>
+<h4>Advanced Search &amp; Filters</h4>
+<p>Full-text search with auto-suggestions, multi-faceted filtering by category, price range,
                         ratings, and availability, with instant results.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="fas fa-boxes-stacked"></i>
-                    </div>
-                    <h4>Inventory Management</h4>
-                    <p>Real-time stock tracking with low-inventory alerts, automated restocking notifications, batch
+</div>
+<div class="feature-card">
+<div class="feature-card-icon">
+<i class="fas fa-boxes-stacked"></i>
+</div>
+<h4>Inventory Management</h4>
+<p>Real-time stock tracking with low-inventory alerts, automated restocking notifications, batch
                         product uploads via CSV, and variant management.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tech Stack -->
-    <section class="project-tech-stack">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Tech Stack</h2>
-                <p class="section-subtitle">Technologies powering this project</p>
-            </div>
-            <div class="tech-stack-grid">
-                <div class="tech-stack-item">
-                    <i class="fab fa-react"></i>
-                    <h4>React</h4>
-                    <p>Component-based UI with hooks, context API, and React Router for seamless SPA navigation</p>
-                </div>
-                <div class="tech-stack-item">
-                    <i class="fab fa-node-js"></i>
-                    <h4>Node.js</h4>
-                    <p>Server-side runtime with Express.js for building RESTful APIs and handling business logic</p>
-                </div>
-                <div class="tech-stack-item">
-                    <i class="fas fa-database"></i>
-                    <h4>MongoDB</h4>
-                    <p>NoSQL database with Mongoose ODM for flexible product schemas and efficient query operations</p>
-                </div>
-                <div class="tech-stack-item">
-                    <i class="fas fa-lock"></i>
-                    <h4>Stripe API</h4>
-                    <p>Secure payment processing with webhook integration for real-time payment status updates</p>
-                </div>
-                <div class="tech-stack-item">
-                    <i class="fas fa-key"></i>
-                    <h4>JWT & bcrypt</h4>
-                    <p>Token-based authentication with password hashing for secure user session management</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Architecture -->
-    <section class="project-architecture">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Architecture & Approach</h2>
-                <p class="section-subtitle">How this project was built</p>
-            </div>
-            <div class="architecture-content">
-                <div class="architecture-steps">
-                    <div class="architecture-step">
-                        <h4>1. Planning & Database Design</h4>
-                        <p>Started with wireframing the user flow and designing the MongoDB schema — including
+</div>
+</div>
+</div>
+</section><section class="project-tech-stack">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Tech Stack</h2>
+<p class="section-subtitle">Technologies powering this project</p>
+</div>
+<div class="tech-stack-grid">
+<div class="tech-stack-item">
+<i class="fab fa-react"></i>
+<h4>React</h4>
+<p>Component-based UI with hooks, context API, and React Router for seamless SPA navigation</p>
+</div>
+<div class="tech-stack-item">
+<i class="fab fa-node-js"></i>
+<h4>Node.js</h4>
+<p>Server-side runtime with Express.js for building RESTful APIs and handling business logic</p>
+</div>
+<div class="tech-stack-item">
+<i class="fas fa-database"></i>
+<h4>MongoDB</h4>
+<p>NoSQL database with Mongoose ODM for flexible product schemas and efficient query operations</p>
+</div>
+<div class="tech-stack-item">
+<i class="fas fa-lock"></i>
+<h4>Stripe API</h4>
+<p>Secure payment processing with webhook integration for real-time payment status updates</p>
+</div>
+<div class="tech-stack-item">
+<i class="fas fa-key"></i>
+<h4>JWT &amp; bcrypt</h4>
+<p>Token-based authentication with password hashing for secure user session management</p>
+</div>
+</div>
+</div>
+</section><section class="project-architecture">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Architecture &amp; Approach</h2>
+<p class="section-subtitle">How this project was built</p>
+</div>
+<div class="architecture-content">
+<div class="architecture-steps">
+<div class="architecture-step">
+<h4>1. Planning &amp; Database Design</h4>
+<p>Started with wireframing the user flow and designing the MongoDB schema — including
                             collections for users, products, orders, reviews, and cart items with proper indexing
                             for optimal query performance.</p>
-                    </div>
-                    <div class="architecture-step">
-                        <h4>2. Backend API Development</h4>
-                        <p>Built a RESTful API with Express.js implementing CRUD operations, authentication
+</div>
+<div class="architecture-step">
+<h4>2. Backend API Development</h4>
+<p>Built a RESTful API with Express.js implementing CRUD operations, authentication
                             middleware, error handling, input validation with Joi, and rate limiting. Structured
                             using the MVC pattern for maintainability.</p>
-                    </div>
-                    <div class="architecture-step">
-                        <h4>3. Frontend Development</h4>
-                        <p>Developed the React frontend with reusable components, global state management using
+</div>
+<div class="architecture-step">
+<h4>3. Frontend Development</h4>
+<p>Developed the React frontend with reusable components, global state management using
                             Context API, and React Router for client-side routing. Implemented responsive design
                             with CSS Grid and Flexbox.</p>
-                    </div>
-                    <div class="architecture-step">
-                        <h4>4. Payment & Order Pipeline</h4>
-                        <p>Integrated Stripe Checkout with webhook listeners for payment confirmation, automated
+</div>
+<div class="architecture-step">
+<h4>4. Payment &amp; Order Pipeline</h4>
+<p>Integrated Stripe Checkout with webhook listeners for payment confirmation, automated
                             order status updates, email notifications, and inventory adjustment upon successful
                             transactions.</p>
-                    </div>
-                    <div class="architecture-step">
-                        <h4>5. Testing & Optimization</h4>
-                        <p>Conducted thorough testing including unit tests, API endpoint testing with Postman,
+</div>
+<div class="architecture-step">
+<h4>5. Testing &amp; Optimization</h4>
+<p>Conducted thorough testing including unit tests, API endpoint testing with Postman,
                             and performance optimization through image compression, code splitting, lazy loading,
                             and server-side response caching.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Challenges -->
-    <section class="project-challenges">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Challenges & Solutions</h2>
-                <p class="section-subtitle">Problems I solved along the way</p>
-            </div>
-            <div class="challenges-grid">
-                <div class="challenge-card">
-                    <div class="challenge-header">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        <h4>Cart Synchronization</h4>
-                    </div>
-                    <div class="challenge-body">
-                        <div class="challenge-label problem">Challenge</div>
-                        <p>Keeping the shopping cart in sync between the client, server, and database — especially
+</div>
+</div>
+</div>
+</div>
+</section><section class="project-challenges">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Challenges &amp; Solutions</h2>
+<p class="section-subtitle">Problems I solved along the way</p>
+</div>
+<div class="challenges-grid">
+<div class="challenge-card">
+<div class="challenge-header">
+<i class="fas fa-exclamation-triangle"></i>
+<h4>Cart Synchronization</h4>
+</div>
+<div class="challenge-body">
+<div class="challenge-label problem">Challenge</div>
+<p>Keeping the shopping cart in sync between the client, server, and database — especially
                             when users switch devices or items go out of stock mid-session.</p>
-                        <div class="challenge-label solution">Solution</div>
-                        <p>Implemented a hybrid cart system that stores cart data locally for guests and syncs
+<div class="challenge-label solution">Solution</div>
+<p>Implemented a hybrid cart system that stores cart data locally for guests and syncs
                             with the database for logged-in users, with real-time stock validation during checkout.</p>
-                    </div>
-                </div>
-                <div class="challenge-card">
-                    <div class="challenge-header">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        <h4>Payment Security</h4>
-                    </div>
-                    <div class="challenge-body">
-                        <div class="challenge-label problem">Challenge</div>
-                        <p>Ensuring payment processing is fully secure while handling edge cases like network
+</div>
+</div>
+<div class="challenge-card">
+<div class="challenge-header">
+<i class="fas fa-exclamation-triangle"></i>
+<h4>Payment Security</h4>
+</div>
+<div class="challenge-body">
+<div class="challenge-label problem">Challenge</div>
+<p>Ensuring payment processing is fully secure while handling edge cases like network
                             failures during checkout, duplicate transactions, and webhook delivery issues.</p>
-                        <div class="challenge-label solution">Solution</div>
-                        <p>Used Stripe's idempotency keys to prevent duplicate charges, implemented webhook
+<div class="challenge-label solution">Solution</div>
+<p>Used Stripe's idempotency keys to prevent duplicate charges, implemented webhook
                             signature verification, and added a payment reconciliation job to catch any missed events.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Navigation -->
-    <section class="project-nav">
-        <div class="container">
-            <div class="project-nav-content">
-                <a href="index.html#projects" class="project-nav-btn btn-primary">
-                    <i class="fas fa-arrow-left"></i> Back to All Projects
+</div>
+</div>
+</div>
+</div>
+</section><section class="project-nav">
+<div class="container">
+<div class="project-nav-content">
+<a class="project-nav-btn btn-primary" href="index.html#projects">
+<i class="fas fa-arrow-left"></i> Back to All Projects
                 </a>
-                <a href="project-taskmanager.html" class="project-nav-btn">
+<a class="project-nav-btn" href="project-taskmanager.html">
                     Next Project <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2026 Zohaib Ali. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-
-</html>
+</a>
+</div>
+</div>
+</section></main><footer><div class="wrap"><div class="footer-top"><a class="logo" href="index.html#top"><span class="mono-mark">ZA</span>Zohaib Ali</a><p>Building the future, one line of code at a time.</p><div class="footer-socials"><a href="https://github.com/ZohaibAli-dev/" rel="noopener noreferrer" target="_blank">GitHub ↗</a><a href="https://www.linkedin.com/in/zohaibali-dev/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a><a href="mailto:iamzohaibali@gmail.com">Email ↗</a></div></div><div class="foot"><span>© 2026 Zohaib Ali. All rights reserved.</span><nav aria-label="More about Zohaib" class="footer-pages"><a href="about.html">About</a><a href="skills.html">Skills</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav><a href="#top">Back to top ↑</a></div></div></footer><script defer="" src="script.js?v=20261026"></script></body></html>

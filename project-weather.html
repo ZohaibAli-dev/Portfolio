@@ -1,340 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Weather Dashboard - An interactive weather application with forecasts and data visualizations, built by Zohaib Ali using JavaScript, Weather API, and Chart.js.">
-    <title>Weather Dashboard | Zohaib Ali - Project Details</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-</head>
-
-<body class="project-detail-page">
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <a href="index.html">Zohaib<span class="accent">.</span>Ali</a>
-                </div>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="index.html#about" class="nav-link">About</a></li>
-                    <li><a href="index.html#skills" class="nav-link">Skills</a></li>
-                    <li><a href="index.html#projects" class="nav-link active">Projects</a></li>
-                    <li><a href="index.html#services" class="nav-link">Services</a></li>
-                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <div class="nav-actions">
-                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Project Hero -->
-    <section class="project-detail-hero">
-        <div class="container">
-            <div class="project-hero-content">
-                <div class="project-hero-text">
-                    <div class="project-hero-breadcrumb">
-                        <a href="index.html">Home</a>
-                        <span class="separator">/</span>
-                        <a href="index.html#projects">Projects</a>
-                        <span class="separator">/</span>
-                        <span class="current">Weather Dashboard</span>
-                    </div>
-                    <h1>Weather Dashboard</h1>
-                    <p class="project-hero-tagline">
+<html data-theme="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/><meta content="Weather Dashboard - An interactive weather application with forecasts and data visualizations, built by Zohaib Ali using JavaScript, Weather API, and Chart.js." name="description"/><meta content="#0C0B0A" name="theme-color"/><title>Weather Dashboard | Zohaib Ali - Project Details</title><script>try{document.documentElement.dataset.theme=localStorage.getItem('portfolio-theme')||'dark'}catch(e){}</script><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&amp;family=Instrument+Sans:wght@400..700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/><link href="style.css?v=20261026c" rel="stylesheet"/><link href="favicon.svg" rel="icon" type="image/svg+xml"/></head><body><a class="skip-link" href="#top">Skip to content</a><div aria-hidden="true" class="aura"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div><div class="cursor" hidden="" id="cursor"></div><header aria-label="Site header" class="nav" id="nav">
+<div class="wrap nav-in">
+<a aria-label="Zohaib Ali, back to top" class="logo" href="index.html#top"><span class="mono-mark">ZA</span><span>Zohaib Ali</span></a>
+<ul aria-label="Main navigation" class="links"><li><a href="index.html#about">About</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#services">Services</a></li><li><a href="index.html#contact">Contact</a></li></ul>
+<div class="nav-actions">
+<button aria-label="Switch theme" class="icon-btn" id="themeToggle" type="button">
+<svg class="sun" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+<svg class="moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"></path></svg>
+</button>
+<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Open menu" class="icon-btn menu-btn" id="menuBtn" type="button">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"></path></svg>
+</button>
+<a class="btn btn-primary btn-sm hire magnetic" href="contact.html">Hire me</a>
+</div>
+</div>
+<nav aria-label="Mobile" class="mobile-menu" hidden="" id="mobileMenu">
+<div class="wrap">
+<ul><li><a href="index.html#about">About</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#services">Services</a></li><li><a href="index.html#contact">Contact</a></li></ul>
+</div>
+</nav>
+<div class="progress" id="progress"></div>
+</header><main class="detail-page" id="top"><section class="project-detail-hero">
+<div class="container">
+<div class="project-hero-content">
+<div class="project-hero-text">
+<div class="project-hero-breadcrumb">
+<a href="index.html">Home</a>
+<span class="separator">/</span>
+<a href="index.html#projects">Projects</a>
+<span class="separator">/</span>
+<span class="current">Weather Dashboard</span>
+</div>
+<h1>Weather Dashboard</h1>
+<p class="project-hero-tagline">
                         An interactive weather application featuring real-time forecasts, location-based weather
                         data, beautiful data visualizations, and a 7-day forecast — delivering weather insights
                         with a stunning, dynamic interface.
                     </p>
-                    <div class="project-hero-meta">
-                        <div class="project-meta-item">
-                            <i class="fas fa-calendar-alt"></i>
-                            <span>2024</span>
-                        </div>
-                        <div class="project-meta-item">
-                            <i class="fas fa-clock"></i>
-                            <span>3 Weeks</span>
-                        </div>
-                        <div class="project-meta-item">
-                            <i class="fas fa-user"></i>
-                            <span>Frontend Developer</span>
-                        </div>
-                    </div>
-                    <div class="project-hero-tags">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">OpenWeather API</span>
-                        <span class="tech-tag">Chart.js</span>
-                        <span class="tech-tag">Geolocation API</span>
-                        <span class="tech-tag">CSS3</span>
-                    </div>
-                </div>
-                <div class="project-hero-image">
-                    <div class="project-hero-image-wrapper">
-                        <img src="project5.jpg" alt="Weather Dashboard Screenshot">
-                    </div>
-                    <div class="project-hero-image-glow"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Overview -->
-    <section class="project-overview">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Project Overview</h2>
-                <p class="section-subtitle">The vision behind this project</p>
-            </div>
-            <div class="project-overview-content">
-                <h3>Weather Data, Beautifully Presented</h3>
-                <p>
+<div class="project-hero-meta">
+<div class="project-meta-item">
+<i class="fas fa-calendar-alt"></i>
+<span>2024</span>
+</div>
+<div class="project-meta-item">
+<i class="fas fa-clock"></i>
+<span>3 Weeks</span>
+</div>
+<div class="project-meta-item">
+<i class="fas fa-user"></i>
+<span>Frontend Developer</span>
+</div>
+</div>
+<div class="project-hero-tags">
+<span class="tech-tag">JavaScript</span>
+<span class="tech-tag">OpenWeather API</span>
+<span class="tech-tag">Chart.js</span>
+<span class="tech-tag">Geolocation API</span>
+<span class="tech-tag">CSS3</span>
+</div>
+</div>
+<div class="project-hero-image">
+<div class="project-hero-image-wrapper">
+<img alt="Weather Dashboard Screenshot" loading="lazy" src="project5.jpg"/>
+</div>
+<div class="project-hero-image-glow"></div>
+</div>
+</div>
+</div>
+</section><section class="project-overview">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Project Overview</h2>
+<p class="section-subtitle">The vision behind this project</p>
+</div>
+<div class="project-overview-content">
+<h3>Weather Data, Beautifully Presented</h3>
+<p>
                     This weather dashboard was created with the philosophy that weather data should be both
                     informative and visually engaging. Instead of a typical text-heavy weather app, this
                     dashboard presents meteorological data through beautiful charts, animated weather icons,
                     and a dynamic interface that adapts its color scheme based on current conditions.
                 </p>
-                <p>
+<p>
                     The app pulls real-time weather data from the OpenWeather API, including current conditions,
                     hourly forecasts for the next 48 hours, and a 7-day daily forecast. Users can search for
                     any city worldwide or use their device's geolocation for automatic location detection.
                     Weather data is presented through interactive Chart.js visualizations showing temperature
                     trends, humidity patterns, wind speed changes, and precipitation probability.
                 </p>
-                <p>
+<p>
                     A unique feature is the dynamic background and theme system — the entire interface subtly
                     shifts its color palette based on the current weather condition (sunny, cloudy, rainy, snowy)
                     and time of day, creating an immersive experience that reflects the outside world.
                 </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Key Features -->
-    <section class="project-features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Key Features</h2>
-                <p class="section-subtitle">What makes this dashboard special</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="fas fa-cloud-sun"></i>
-                    </div>
-                    <h4>Real-Time Weather</h4>
-                    <p>Current temperature, feels-like, humidity, wind speed, UV index, visibility, and pressure
+</div>
+</div>
+</section><section class="project-features">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Key Features</h2>
+<p class="section-subtitle">What makes this dashboard special</p>
+</div>
+<div class="features-grid">
+<div class="feature-card">
+<div class="feature-card-icon">
+<i class="fas fa-cloud-sun"></i>
+</div>
+<h4>Real-Time Weather</h4>
+<p>Current temperature, feels-like, humidity, wind speed, UV index, visibility, and pressure
                         with auto-refresh every 10 minutes for always-fresh data.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h4>Interactive Charts</h4>
-                    <p>Temperature trends, humidity curves, and wind speed patterns visualized through smooth
+</div>
+<div class="feature-card">
+<div class="feature-card-icon">
+<i class="fas fa-chart-line"></i>
+</div>
+<h4>Interactive Charts</h4>
+<p>Temperature trends, humidity curves, and wind speed patterns visualized through smooth
                         Chart.js line and bar charts with hover tooltips and responsive scaling.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="fas fa-calendar-week"></i>
-                    </div>
-                    <h4>7-Day Forecast</h4>
-                    <p>Extended forecast with daily high/low temperatures, precipitation probability, weather
+</div>
+<div class="feature-card">
+<div class="feature-card-icon">
+<i class="fas fa-calendar-week"></i>
+</div>
+<h4>7-Day Forecast</h4>
+<p>Extended forecast with daily high/low temperatures, precipitation probability, weather
                         descriptions, and animated weather condition icons for each day.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="fas fa-location-dot"></i>
-                    </div>
-                    <h4>Location Detection</h4>
-                    <p>Automatic geolocation detection for instant local weather, plus a search bar with
+</div>
+<div class="feature-card">
+<div class="feature-card-icon">
+<i class="fas fa-location-dot"></i>
+</div>
+<h4>Location Detection</h4>
+<p>Automatic geolocation detection for instant local weather, plus a search bar with
                         autocomplete suggestions for exploring weather in any city worldwide.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h4>Dynamic Themes</h4>
-                    <p>The interface adapts its color scheme based on weather conditions and time of day —
+</div>
+<div class="feature-card">
+<div class="feature-card-icon">
+<i class="fas fa-palette"></i>
+</div>
+<h4>Dynamic Themes</h4>
+<p>The interface adapts its color scheme based on weather conditions and time of day —
                         warm tones for sunny weather, cool blues for rain, and dark themes for nighttime.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="fas fa-bookmark"></i>
-                    </div>
-                    <h4>Saved Locations</h4>
-                    <p>Save frequently checked locations for quick access, with a sidebar showing at-a-glance
+</div>
+<div class="feature-card">
+<div class="feature-card-icon">
+<i class="fas fa-bookmark"></i>
+</div>
+<h4>Saved Locations</h4>
+<p>Save frequently checked locations for quick access, with a sidebar showing at-a-glance
                         conditions for all saved cities, stored in localStorage for persistence.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tech Stack -->
-    <section class="project-tech-stack">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Tech Stack</h2>
-                <p class="section-subtitle">Technologies powering this project</p>
-            </div>
-            <div class="tech-stack-grid">
-                <div class="tech-stack-item">
-                    <i class="fab fa-js-square"></i>
-                    <h4>JavaScript (ES6+)</h4>
-                    <p>Async/await for API calls, DOM manipulation, module pattern for code organization, and localStorage API</p>
-                </div>
-                <div class="tech-stack-item">
-                    <i class="fas fa-cloud"></i>
-                    <h4>OpenWeather API</h4>
-                    <p>One Call API 3.0 for current, hourly, daily forecasts, and weather alerts in a single request</p>
-                </div>
-                <div class="tech-stack-item">
-                    <i class="fas fa-chart-pie"></i>
-                    <h4>Chart.js</h4>
-                    <p>Responsive, interactive charts with gradient fills, custom tooltips, and animated transitions</p>
-                </div>
-                <div class="tech-stack-item">
-                    <i class="fab fa-css3-alt"></i>
-                    <h4>CSS3</h4>
-                    <p>CSS custom properties for dynamic theming, Grid/Flexbox layouts, and smooth CSS animations</p>
-                </div>
-                <div class="tech-stack-item">
-                    <i class="fas fa-location-crosshairs"></i>
-                    <h4>Geolocation API</h4>
-                    <p>Browser's native geolocation for automatic user location detection with fallback handling</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Architecture -->
-    <section class="project-architecture">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Architecture & Approach</h2>
-                <p class="section-subtitle">How this project was built</p>
-            </div>
-            <div class="architecture-content">
-                <div class="architecture-steps">
-                    <div class="architecture-step">
-                        <h4>1. API Integration Strategy</h4>
-                        <p>Chose OpenWeather's One Call API to minimize HTTP requests — a single call returns
+</div>
+</div>
+</div>
+</section><section class="project-tech-stack">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Tech Stack</h2>
+<p class="section-subtitle">Technologies powering this project</p>
+</div>
+<div class="tech-stack-grid">
+<div class="tech-stack-item">
+<i class="fab fa-js-square"></i>
+<h4>JavaScript (ES6+)</h4>
+<p>Async/await for API calls, DOM manipulation, module pattern for code organization, and localStorage API</p>
+</div>
+<div class="tech-stack-item">
+<i class="fas fa-cloud"></i>
+<h4>OpenWeather API</h4>
+<p>One Call API 3.0 for current, hourly, daily forecasts, and weather alerts in a single request</p>
+</div>
+<div class="tech-stack-item">
+<i class="fas fa-chart-pie"></i>
+<h4>Chart.js</h4>
+<p>Responsive, interactive charts with gradient fills, custom tooltips, and animated transitions</p>
+</div>
+<div class="tech-stack-item">
+<i class="fab fa-css3-alt"></i>
+<h4>CSS3</h4>
+<p>CSS custom properties for dynamic theming, Grid/Flexbox layouts, and smooth CSS animations</p>
+</div>
+<div class="tech-stack-item">
+<i class="fas fa-location-crosshairs"></i>
+<h4>Geolocation API</h4>
+<p>Browser's native geolocation for automatic user location detection with fallback handling</p>
+</div>
+</div>
+</div>
+</section><section class="project-architecture">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Architecture &amp; Approach</h2>
+<p class="section-subtitle">How this project was built</p>
+</div>
+<div class="architecture-content">
+<div class="architecture-steps">
+<div class="architecture-step">
+<h4>1. API Integration Strategy</h4>
+<p>Chose OpenWeather's One Call API to minimize HTTP requests — a single call returns
                             current weather, hourly forecast (48h), daily forecast (7d), and weather alerts.
                             Implemented caching to avoid redundant API calls within 10-minute windows.</p>
-                    </div>
-                    <div class="architecture-step">
-                        <h4>2. Dynamic Theming System</h4>
-                        <p>Built a CSS custom property-based theming engine that maps weather condition codes
+</div>
+<div class="architecture-step">
+<h4>2. Dynamic Theming System</h4>
+<p>Built a CSS custom property-based theming engine that maps weather condition codes
                             to color palettes. On each data fetch, the app reads the weather ID and
                             time-of-day, then smoothly transitions CSS variables for background, text, and
                             accent colors.</p>
-                    </div>
-                    <div class="architecture-step">
-                        <h4>3. Data Visualization</h4>
-                        <p>Created a chart configuration factory that transforms raw API data into Chart.js
+</div>
+<div class="architecture-step">
+<h4>3. Data Visualization</h4>
+<p>Created a chart configuration factory that transforms raw API data into Chart.js
                             datasets with proper formatting, gradient fills, and responsive options. Charts
                             update seamlessly when switching between locations.</p>
-                    </div>
-                    <div class="architecture-step">
-                        <h4>4. Responsive Layout</h4>
-                        <p>Designed a card-based grid layout using CSS Grid with auto-fit columns that
+</div>
+<div class="architecture-step">
+<h4>4. Responsive Layout</h4>
+<p>Designed a card-based grid layout using CSS Grid with auto-fit columns that
                             gracefully rearranges from a multi-column desktop view to a single-column mobile
                             layout. Weather cards include subtle hover animations for interactivity.</p>
-                    </div>
-                    <div class="architecture-step">
-                        <h4>5. Error Handling & UX</h4>
-                        <p>Implemented comprehensive error handling for failed API calls, geolocation denials,
+</div>
+<div class="architecture-step">
+<h4>5. Error Handling &amp; UX</h4>
+<p>Implemented comprehensive error handling for failed API calls, geolocation denials,
                             invalid city searches, and network issues — each with user-friendly error messages
                             and recovery suggestions rather than generic error screens.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Challenges -->
-    <section class="project-challenges">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Challenges & Solutions</h2>
-                <p class="section-subtitle">Problems I solved along the way</p>
-            </div>
-            <div class="challenges-grid">
-                <div class="challenge-card">
-                    <div class="challenge-header">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        <h4>API Rate Limiting</h4>
-                    </div>
-                    <div class="challenge-body">
-                        <div class="challenge-label problem">Challenge</div>
-                        <p>The free tier of OpenWeather API has strict rate limits. Frequent location switches
+</div>
+</div>
+</div>
+</div>
+</section><section class="project-challenges">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Challenges &amp; Solutions</h2>
+<p class="section-subtitle">Problems I solved along the way</p>
+</div>
+<div class="challenges-grid">
+<div class="challenge-card">
+<div class="challenge-header">
+<i class="fas fa-exclamation-triangle"></i>
+<h4>API Rate Limiting</h4>
+</div>
+<div class="challenge-body">
+<div class="challenge-label problem">Challenge</div>
+<p>The free tier of OpenWeather API has strict rate limits. Frequent location switches
                             and auto-refresh could quickly exhaust the daily quota.</p>
-                        <div class="challenge-label solution">Solution</div>
-                        <p>Implemented a smart caching layer using localStorage with TTL (time-to-live)
+<div class="challenge-label solution">Solution</div>
+<p>Implemented a smart caching layer using localStorage with TTL (time-to-live)
                             timestamps. Cached responses are served for repeated requests within 10 minutes,
                             reducing API calls by approximately 70%.</p>
-                    </div>
-                </div>
-                <div class="challenge-card">
-                    <div class="challenge-header">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        <h4>Cross-Browser Geolocation</h4>
-                    </div>
-                    <div class="challenge-body">
-                        <div class="challenge-label problem">Challenge</div>
-                        <p>The Geolocation API behaves differently across browsers and many users deny location
+</div>
+</div>
+<div class="challenge-card">
+<div class="challenge-header">
+<i class="fas fa-exclamation-triangle"></i>
+<h4>Cross-Browser Geolocation</h4>
+</div>
+<div class="challenge-body">
+<div class="challenge-label problem">Challenge</div>
+<p>The Geolocation API behaves differently across browsers and many users deny location
                             permission, requiring robust fallback handling without degrading the experience.</p>
-                        <div class="challenge-label solution">Solution</div>
-                        <p>Implemented a graceful fallback chain: try geolocation → fall back to IP-based
+<div class="challenge-label solution">Solution</div>
+<p>Implemented a graceful fallback chain: try geolocation → fall back to IP-based
                             location → fall back to a default city, with a prominent search bar always visible
                             so users can manually enter their location.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Navigation -->
-    <section class="project-nav">
-        <div class="container">
-            <div class="project-nav-content">
-                <a href="project-realestate.html" class="project-nav-btn">
-                    <i class="fas fa-arrow-left"></i> Previous Project
+</div>
+</div>
+</div>
+</div>
+</section><section class="project-nav">
+<div class="container">
+<div class="project-nav-content">
+<a class="project-nav-btn" href="project-realestate.html">
+<i class="fas fa-arrow-left"></i> Previous Project
                 </a>
-                <a href="index.html#projects" class="project-nav-btn btn-primary">
-                    <i class="fas fa-th-large"></i> All Projects
+<a class="project-nav-btn btn-primary" href="index.html#projects">
+<i class="fas fa-th-large"></i> All Projects
                 </a>
-                <a href="project-socialmedia.html" class="project-nav-btn">
+<a class="project-nav-btn" href="project-socialmedia.html">
                     Next Project <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2026 Zohaib Ali. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-
-</html>
+</a>
+</div>
+</div>
+</section></main><footer><div class="wrap"><div class="footer-top"><a class="logo" href="index.html#top"><span class="mono-mark">ZA</span>Zohaib Ali</a><p>Building the future, one line of code at a time.</p><div class="footer-socials"><a href="https://github.com/ZohaibAli-dev/" rel="noopener noreferrer" target="_blank">GitHub ↗</a><a href="https://www.linkedin.com/in/zohaibali-dev/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a><a href="mailto:iamzohaibali@gmail.com">Email ↗</a></div></div><div class="foot"><span>© 2026 Zohaib Ali. All rights reserved.</span><nav aria-label="More about Zohaib" class="footer-pages"><a href="about.html">About</a><a href="skills.html">Skills</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav><a href="#top">Back to top ↑</a></div></div></footer><script defer="" src="script.js?v=20261026"></script></body></html>

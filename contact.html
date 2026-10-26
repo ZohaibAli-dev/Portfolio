@@ -1,188 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Zohaib Ali - Get in touch for project collaborations, freelance work, or just to say hello.">
-    <title>Contact | Zohaib Ali - Software Engineer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <a href="index.html">Zohaib<span class="accent">.</span>Ali</a>
-                </div>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="skills.html" class="nav-link">Skills</a></li>
-                    <li><a href="index.html#projects" class="nav-link">Projects</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
-                </ul>
-                <div class="nav-actions">
-                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Hero -->
-    <section class="page-hero">
-        <div class="container">
-            <div class="page-hero-breadcrumb">
-                <a href="index.html">Home</a>
-                <span class="separator">/</span>
-                <span class="current">Contact</span>
-            </div>
-            <h1>Get In Touch</h1>
-            <p>Have a project in mind? Let's work together and build something amazing</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Contact Me</h2>
-                <p class="section-subtitle">Let's start a conversation</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p>Feel free to reach out for collaborations, projects, or just a friendly chat!</p>
-
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <a href="mailto:iamzohaibali@gmail.com">iamzohaibali07@gmail.com</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fab fa-whatsapp"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>WhatsApp</h4>
-                                <a href="https://wa.me/923259938497">+92 325 9938497</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Location</h4>
-                                <p>Pakistan</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="https://github.com/ZohaibAli-dev/" target="_blank" rel="noopener" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/zohaibali-dev/" target="_blank" rel="noopener" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="mailto:iamzohaibali@gmail.com" class="social-link">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="https://wa.me/923259938497" target="_blank" rel="noopener" class="social-link">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mbdknpal" method="POST">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
-                            <span class="error-message" id="nameError"></span>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" required>
-                            <span class="error-message" id="emailError"></span>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                            <span class="error-message" id="messageError"></span>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-block">
-                            <i class="fas fa-paper-plane"></i> Send Message
+<html data-theme="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/><meta content="Contact Zohaib Ali - Get in touch for project collaborations, freelance work, or just to say hello." name="description"/><meta content="#0C0B0A" name="theme-color"/><title>Contact | Zohaib Ali - Software Engineer</title><script>try{document.documentElement.dataset.theme=localStorage.getItem('portfolio-theme')||'dark'}catch(e){}</script><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&amp;family=Instrument+Sans:wght@400..700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/><link href="style.css?v=20261026c" rel="stylesheet"/><link href="favicon.svg" rel="icon" type="image/svg+xml"/></head><body><a class="skip-link" href="#top">Skip to content</a><div aria-hidden="true" class="aura"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div><div class="cursor" hidden="" id="cursor"></div><header aria-label="Site header" class="nav" id="nav">
+<div class="wrap nav-in">
+<a aria-label="Zohaib Ali, back to top" class="logo" href="index.html#top"><span class="mono-mark">ZA</span><span>Zohaib Ali</span></a>
+<ul aria-label="Main navigation" class="links"><li><a href="index.html#about">About</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#services">Services</a></li><li><a href="index.html#contact">Contact</a></li></ul>
+<div class="nav-actions">
+<button aria-label="Switch theme" class="icon-btn" id="themeToggle" type="button">
+<svg class="sun" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+<svg class="moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"></path></svg>
+</button>
+<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Open menu" class="icon-btn menu-btn" id="menuBtn" type="button">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"></path></svg>
+</button>
+<a class="btn btn-primary btn-sm hire magnetic" href="contact.html">Hire me</a>
+</div>
+</div>
+<nav aria-label="Mobile" class="mobile-menu" hidden="" id="mobileMenu">
+<div class="wrap">
+<ul><li><a href="index.html#about">About</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#services">Services</a></li><li><a href="index.html#contact">Contact</a></li></ul>
+</div>
+</nav>
+<div class="progress" id="progress"></div>
+</header><main class="detail-page" id="top"><section class="page-hero">
+<div class="container">
+<div class="page-hero-breadcrumb">
+<a href="index.html">Home</a>
+<span class="separator">/</span>
+<span class="current">Contact</span>
+</div>
+<h1>Get In Touch</h1>
+<p>Have a project in mind? Let's work together and build something amazing</p>
+</div>
+</section><section class="contact" id="contact">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Contact Me</h2>
+<p class="section-subtitle">Let's start a conversation</p>
+</div>
+<div class="contact-content">
+<div class="contact-info">
+<h3>Contact Information</h3>
+<p>Feel free to reach out for collaborations, projects, or just a friendly chat!</p>
+<div class="contact-details">
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fas fa-envelope"></i>
+</div>
+<div class="contact-text">
+<h4>Email</h4>
+<a href="mailto:iamzohaibali@gmail.com">iamzohaibali@gmail.com</a>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="contact-text">
+<h4>Location</h4>
+<p>Pakistan</p>
+</div>
+</div>
+</div>
+<div class="social-links">
+<a aria-label="GitHub" class="social-link" href="https://github.com/ZohaibAli-dev/" rel="noopener" target="_blank">
+<i class="fab fa-github"></i>
+</a>
+<a aria-label="LinkedIn" class="social-link" href="https://www.linkedin.com/in/zohaibali-dev/" rel="noopener" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+<a aria-label="Email" class="social-link" href="mailto:iamzohaibali@gmail.com">
+<i class="fas fa-envelope"></i>
+</a>
+</div>
+</div>
+<div class="contact-form-wrapper">
+<form action="https://formspree.io/f/mbdknpal" class="contact-form" id="contactForm" method="POST">
+<div class="form-group">
+<label for="name">Your Name</label>
+<input id="name" name="name" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">Your Email</label>
+<input id="email" name="email" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="message">Your Message</label>
+<textarea id="message" name="message" required="" rows="5"></textarea>
+</div>
+<button class="btn btn-primary btn-block" type="submit">
+<i class="fas fa-paper-plane"></i> Send Message
                         </button>
-
-                        <div class="form-success" id="formSuccess">
-                            <i class="fas fa-check-circle"></i> Message sent successfully!
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="index.html">Zohaib<span class="accent">.</span>Ali</a>
-                    <p>Building the future, one line of code at a time.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="skills.html">Skills</a></li>
-                        <li><a href="index.html#projects">Projects</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h4>Connect With Me</h4>
-                    <div class="social-links">
-                        <a href="https://github.com/ZohaibAli-dev/" target="_blank" rel="noopener" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/zohaibali-dev/" target="_blank" rel="noopener" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:iamzohaibali@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
-                        <a href="https://wa.me/923259938497" target="_blank" rel="noopener" class="social-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Zohaib Ali. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-
-</html>
+</form>
+</div>
+</div>
+</div>
+</section></main><footer><div class="wrap"><div class="footer-top"><a class="logo" href="index.html#top"><span class="mono-mark">ZA</span>Zohaib Ali</a><p>Building the future, one line of code at a time.</p><div class="footer-socials"><a href="https://github.com/ZohaibAli-dev/" rel="noopener noreferrer" target="_blank">GitHub ↗</a><a href="https://www.linkedin.com/in/zohaibali-dev/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a><a href="mailto:iamzohaibali@gmail.com">Email ↗</a></div></div><div class="foot"><span>© 2026 Zohaib Ali. All rights reserved.</span><nav aria-label="More about Zohaib" class="footer-pages"><a href="about.html">About</a><a href="skills.html">Skills</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav><a href="#top">Back to top ↑</a></div></div></footer><script defer="" src="script.js?v=20261026"></script></body></html>
